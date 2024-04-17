@@ -19,7 +19,7 @@ namespace ErrorHandlingProblemDetails.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Product>> Get() => await _productService.GetAllPrpoducts();
+        public async Task<IEnumerable<Product>> Get() => await _productService.GetAllProducts();
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetById(int id)

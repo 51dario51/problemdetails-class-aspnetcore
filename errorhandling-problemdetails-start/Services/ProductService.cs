@@ -16,7 +16,7 @@ namespace ErrorHandlingProblemDetails.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Product>> GetAllPrpoducts() => await _context.Products.ToListAsync();
+        public async Task<IEnumerable<Product>> GetAllProducts() => await _context.Products.ToListAsync();
 
         public async Task<Product> GetProductById(int id) => await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
 
